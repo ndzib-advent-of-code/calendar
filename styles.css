@@ -1,0 +1,67 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(to top right, #6F4559, #3C4751);
+}
+
+.calendar {
+    width: fit-content;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+header {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: rgba(250,250,250, .4);
+}
+
+header > button {
+    font-size: 24px;
+    font-weight: bold;
+    border: none;
+    color: white;
+    background-color: transparent;
+}
+
+
+.calendarDays {
+    padding: 10px;
+    background-color: rgba(109, 107, 118, .8);
+}
+
+.dayLabels {
+    color: #5BA4C7;
+}
+
+.dayLabels > * {
+    width: 35px;
+    display: inline-block;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    gap: 10px;
+}
+
+.day {
+    display: block;
+    height: 30px;
+    width: 30px;
+    border-radius: 500px;
+
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+
+.day:focus {
+    background-color: #51C5F5;
+}
